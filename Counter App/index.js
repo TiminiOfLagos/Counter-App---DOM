@@ -13,6 +13,7 @@ const increment = () => {
       counter += 1
       count.textContent = counter
       count.style.color = "black"
+      err.textContent = ""
   } else {
     counter = 10
     err.textContent = "Counter cannot be greater than 10"
@@ -36,16 +37,3 @@ const decrement = () => {
     count.style.color = "red"
   }
 };
-
-// const increment = () => {
-    
-//     if (counter === 10) {
-//       counter = 10
-//       throw Error("Counter cannot be greater than 10")
-//   } else {
-//     counter += 1;
-//     count.textContent = counter;
-//   }
-// };
-
-// console.log(count);
